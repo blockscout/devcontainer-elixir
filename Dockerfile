@@ -1,10 +1,10 @@
-ARG VARIANT="1.17.3-erlang-27.1.3-debian-bookworm-20250811"
+ARG VARIANT="1.19.3-erlang-27.3.4.5-debian-bookworm-20251117"
 FROM hexpm/elixir:${VARIANT}
 
 # ARGs declared before FROM are not persisted beyond the FROM instruction.
 # They must be redeclared here to be available in the rest of the Dockerfile.
 ARG PHOENIX_VERSION="1.7.10"
-ARG NODE_VERSION="18"
+ARG NODE_VERSION="20"
 
 # This Dockerfile adds a non-root user with sudo access. Update the “remoteUser” property in
 # devcontainer.json to use it. More info: https://aka.ms/vscode-remote/containers/non-root-user.
