@@ -1,4 +1,4 @@
-ARG VARIANT="1.19.3-erlang-27.3.4.5-debian-bookworm-20251117"
+ARG VARIANT="1.19.4-erlang-27.3.4.6-debian-bookworm-20251117"
 FROM hexpm/elixir:${VARIANT}
 
 # ARGs declared before FROM are not persisted beyond the FROM instruction.
